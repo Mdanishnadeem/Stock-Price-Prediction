@@ -45,21 +45,27 @@ Early stopping was used to avoid the problem of overfitting
 
 Model Testing 
 
-We now passed the test set through our model to test the overall performance of our model 
-As we needed past 60 days data as input for predicting next days opening price so we had to combine 60 previous values for each day in February. Hence, some were used from the training data
-For example for predicting the value of 28-Feb-23 we used data of past 60 business days. We obtained 18 values from our test set and rest from training set 
-Predictions which are in the scaled format are inverse transformed to obtain predicted stock price values 
+We now passed the test set through our model to test the overall performance of our model. 
+As we needed past 60 days data as input for predicting next days opening price so we had to combine 60 previous values for each day in February. Hence, some were used from the training data.
+For example for predicting the value of 28-Feb-23 we used data of past 60 business days. We obtained 18 values from our test set and rest from training set. 
+Predictions which are in the scaled format are inverse transformed to obtain predicted stock price values. 
 
 Model Evaluation 
 
 The performance was evaluated on the basis of some metrics and validated with unseen data prediction.
 Model Evaluation Metrics
+
 MAE - 1.211 (Mean Absolute Error)
+
 MAPE -  1.206(Mean Absolute Percentage Error)
+
 Validation 
-Evaluating Model performance on unseen data is crucial to evaluate how it will perform in real world scenario
+
+Evaluating Model performance on unseen data is crucial to evaluate how it will perform in real world scenario.
 We used our model to predict the price on 1-March-23
+
 Model Prediction - 89.38348
+
 Actual Stock Price on 03/01 -  90.160004
 
 
