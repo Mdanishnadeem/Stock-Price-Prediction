@@ -23,25 +23,25 @@ We created two separate scaler objects using MinMaxScaler from Scikit-Learn. One
 
 Timestep
 
-As required for time-series analysis we chose a timestep of 60 days as input for predicting the value of next days opening price
-We divided and reshaped our training data accordingly into a 3-D array
-Final dimensions of the array was (1198,60,5) which indicated 1198 – instances, 60 samples in each batch and 5 variables
-Similarly we repeated the process for the test data and the dimensions were (19,60,5)
+As required for time-series analysis we chose a timestep of 60 days as input for predicting the value of next days opening price.
+We divided and reshaped our training data accordingly into a 3-D array.
+Final dimensions of the array was (1198,60,5) which indicated 1198 – instances, 60 samples in each batch and 5 variables.
+Similarly we repeated the process for the test data and the dimensions were (19,60,5).
 
 Data was cleaned and scaled down ready for the model training
 
 
-Algorithm chosen – LSTM
+Algorithm chosen – LSTM,
 LSTM specifications - Four LSTM Layers with 70 neurons in each layer were used and we used a dropout regularization of 15% 
-Dropout Regularization was used to avoid the problem of overfitting
+Dropout Regularization was used to avoid the problem of overfitting.
 
 Model Training
 
-The 4 layers were then fitted on the training data of 5 years
-Optimizer used – “Adam”
-Loss function – “Mean Squared Error”
-4 layers of LSTM was trained in 100 epochs with  batch size of 32
-Early stopping was  used to avoid the problem of overfitting
+The 4 layers were then fitted on the training data of 5 years,
+Optimizer used – “Adam”,
+Loss function – “Mean Squared Error”,
+4 layers of LSTM was trained in 100 epochs with batch size of 32.
+Early stopping was used to avoid the problem of overfitting
 
 Model Testing 
 
