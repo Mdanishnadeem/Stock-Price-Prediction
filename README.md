@@ -12,7 +12,6 @@ Prior to the model building, the data underwent some preprocessing to be made su
 Test and Train Split
 
 We had data spanning from 2018-2023, we had to split this into training and test set.
-
 Training data spanned for 5 years (only business days) from 02-01-2018 to 01-31-2023.
 Test data was the data we would test our model performance on spanned from 02-01-2023 – 02-28-2023.
 
