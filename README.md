@@ -18,6 +18,7 @@ We normalised the values and brought them between 0 and 1
 We created two separate scaler objects using MinMaxScaler from Scikit-Learn. One for the whole input data and one for only open prices (this would come in handy later)
 
 Timestep
+
 As required for time-series analysis we chose a timestep of 60 days as input for predicting the value of next days opening price
 We divided and reshaped our training data accordingly into a 3-D array
 Final dimensions of the array was (1198,60,5) which indicated 1198 – instances, 60 samples in each batch and 5 variables
