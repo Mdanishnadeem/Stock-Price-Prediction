@@ -7,12 +7,16 @@ Testing Data: 19 Financial Days from Feb-2023
 
 DATA PREPROCESSING
 
-Prior to the model building, the data underwent some processing to be made suitable for the algorithm chosen.
+Prior to the model building, the data underwent some preprocessing to be made suitable for the algorithm chosen.
+
 Test and Train Split
+
 We had data spanning from 2018-2023, we had to split this into training and test set
 Training data spanned for 5 years (only business days) from 02-01-2018 to 01-31-2023
 Test data was the data we would test our model performance on spanned from 02-01-2023 – 02-28-2023
+
 Scaling
+
 As per the requirement of deep neural networks data must be scaled and there should not be a lot of difference between values 
 We normalised the values and brought them between 0 and 1
 We created two separate scaler objects using MinMaxScaler from Scikit-Learn. One for the whole input data and one for only open prices (this would come in handy later)
